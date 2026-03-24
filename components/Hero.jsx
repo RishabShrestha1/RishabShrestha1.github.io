@@ -277,7 +277,7 @@ export default function Hero() {
               <p className="font-medium">rishabshrestha92@gmail.com</p>
             </div>
 
-            <div className="float-fast glow-card bg-white/5 backdrop-blur-xl
+            <div className="float-slow glow-card bg-white/5 backdrop-blur-xl
                          border border-white/10 text-base text-white p-6 rounded-2xl 
                          shadow-2xl">
               <div className="flex items-center gap-3 mb-3">
