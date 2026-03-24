@@ -1,6 +1,5 @@
 // pages/index.js
 import Head from "next/head";
-// Import components (static first, heavy ones dynamically)
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Footer from "@/components/Footer";
@@ -14,31 +13,24 @@ export default function Home() {
         <link rel="shortcut icon" href="/favicon/favicon.ico" />
         <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
         <link rel="manifest" href="/favicon/site.webmanifest" />
-        <title>
-          ProfileX – React & Next.js Portfolio Template for Designers, Developers & Creatives
-        </title>
+        <title>Rishab Shrestha — Mobile Application Developer</title>
         <meta name="description"
-          content="A morden React & Next.js portfolio template for designers, developers, and creatives — built with Tailwind CSS for speed, modern design, and responsiveness." />
-        <link rel="canonical" href="https://themixly.com/preview/2067/portfolio-react-nextjs-template" />
+          content="Portfolio of Rishab Shrestha — Mobile Application Developer specializing in Kotlin, Jetpack Compose, and Flutter. Building smart health-tracking and educational apps." />
 
-        <meta name="author" content="ProfileX" />
+        <meta name="author" content="Rishab Shrestha" />
 
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="ProfileX" />
+        <meta property="og:site_name" content="Rishab Shrestha" />
         <meta property="og:title"
-          content="ProfileX – React & Next.js Portfolio Template for Designers, Developers & Creatives" />
+          content="Rishab Shrestha — Mobile Application Developer" />
         <meta property="og:description"
-          content="A morden React & Next.js portfolio template for designers, developers, and creatives — built with Tailwind CSS for speed, modern design, and responsiveness." />
-        <meta property="og:url" content="https://themixly.com/preview/2067/portfolio-react-nextjs-template/" />
-        <meta property="og:image" content="https://themixly.com/wp-content/uploads/2025/08/Artboard-2-3-scaled.jpg" />
+          content="Portfolio of Rishab Shrestha — Mobile Application Developer specializing in Kotlin, Jetpack Compose, and Flutter." />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title"
-          content="ProfileX – React & Next.js Portfolio Template for Designers, Developers & Creatives" />
+          content="Rishab Shrestha — Mobile Application Developer" />
         <meta name="twitter:description"
-          content="A morden React & Next.js portfolio template for designers, developers, and creatives — built with Tailwind CSS for speed, modern design, and responsiveness." />
-        <meta name="twitter:url" content="https://themixly.com/preview/2067/portfolio-react-nextjs-template/" />
-        <meta name="twitter:image" content="https://themixly.com/wp-content/uploads/2025/08/Artboard-2-3-scaled.jpg" />
+          content="Portfolio of Rishab Shrestha — Mobile Application Developer specializing in Kotlin, Jetpack Compose, and Flutter." />
 
       </Head>
       <Hero />
