@@ -1,8 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
+  reactStrictMode: true,
+  trailingSlash: true,
   images: {
-    unoptimized: true, // Required for Next.js Image component in static exports
+    unoptimized: true,
   },
 }
 

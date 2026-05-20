@@ -1,5 +1,5 @@
 {
-  "name": "profilex",
+  "name": "rishab-portfolio",
   "version": "1.0.0",
   "scripts": {
     "dev": "next dev",
@@ -10,11 +10,10 @@
     "autoprefixer": "^10.4.14",
     "clsx": "^2.1.1",
     "lucide-react": "^0.536.0",
-    "next": "latest",
-    "postcss": "^8.4.21",
-    "react": "latest",
-    "react-dom": "latest",
-    "react-toastify": "^11.0.5",
+    "next": "16.2.6",
+    "postcss": "8.5.10",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
     "tailwind-merge": "^3.3.1",
     "tailwindcss": "^3.4.17"
   },
@@ -22,5 +21,10 @@
     "@types/node": "24.2.0",
     "@types/react": "19.1.9",
     "typescript": "5.9.2"
+  },
+  "overrides": {
+    "glob": "13.0.6",
+    "picomatch": "2.3.2",
+    "postcss": "8.5.10"
   }
 }

@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 /* ===== GLOBAL RESETS ===== */
+body {
+  margin: 0;
+  background: #09090b;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -21,6 +26,22 @@ html {
 *::-webkit-scrollbar-thumb {
   background: rgba(255, 255, 255, 0.15);
   border-radius: 3px;
+}
+
+.site-grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: linear-gradient(to bottom, #000 20%, transparent 100%);
+}
+
+.section-kicker {
+  color: #6ee7b7;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
 }
 
 /* ===== ANIMATED GRADIENT TEXT ===== */
