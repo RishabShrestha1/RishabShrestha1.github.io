@@ -8,6 +8,22 @@ export default function Home() {
   const title = "Rishab Shrestha | Mobile Application Developer";
   const description =
     "Portfolio of Rishab Shrestha, a mobile application developer building Kotlin, Jetpack Compose, Flutter, Firebase, and health-tech apps.";
+  const ogImage = `${siteUrl}/favicon/web-app-manifest-512x512.png`;
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Rishab Shrestha",
+    url: siteUrl,
+    jobTitle: "Mobile Application Developer",
+    email: "mailto:rishabshrestha92@gmail.com",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Kathmandu",
+      addressCountry: "NP",
+    },
+    sameAs: ["https://github.com/RishabShrestha1"],
+    knowsAbout: ["Kotlin", "Jetpack Compose", "Flutter", "Firebase", "Android"],
+  };
 
   return (
     <>
@@ -28,9 +44,17 @@ export default function Home() {
         <meta property="og:url" content={siteUrl} />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
-        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="og:image" content={ogImage} />
+        <meta property="og:image:width" content="512" />
+        <meta property="og:image:height" content="512" />
+        <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content={ogImage} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
       </Head>
       <Hero />
       <About />

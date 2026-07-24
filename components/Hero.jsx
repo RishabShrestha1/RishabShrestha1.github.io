@@ -1,4 +1,4 @@
-import { useCallback, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
 import {
   Activity,
@@ -11,7 +11,6 @@ import {
   Mail,
   Menu,
   MessageCircle,
-  Phone,
   ShieldCheck,
   ShoppingBag,
   Smartphone,
@@ -165,6 +164,15 @@ export default function Hero() {
 
   const closeMenu = useCallback(() => setIsMenuOpen(false), []);
   const toggleMenu = useCallback(() => setIsMenuOpen((value) => !value), []);
+
+  useEffect(() => {
+    if (!isMenuOpen) return;
+    const onKeyDown = (event) => {
+      if (event.key === "Escape") setIsMenuOpen(false);
+    };
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, [isMenuOpen]);
 
   return (
     <div className="min-h-screen bg-zinc-950 text-zinc-50">
